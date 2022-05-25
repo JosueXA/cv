@@ -1,0 +1,178 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  background-color: #222;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100vw;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* { box-sizing: border-box; }
+
+/* For clases */
+.card {
+  background-color: #011522;
+  border-radius: 8px;
+  margin: 0 auto;
+  transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+              transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  z-index: 1;
+}
+
+/*
+.card:hover {
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  transform: scale(1.05);
+}
+*/
+
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 0 9px 9px 0;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.red { background-color: #ff605c; }
+
+.yellow { background-color: #ffbd44; }
+
+.green { background-color: #00ca4e; }
+
+.cardAlt {
+  --primary-clr: #1C204B;
+  --dot-clr: #BBC0FF;
+  --play: hsl(195, 74%, 62%);
+  width: 200px;
+  height: 170px;
+  border-radius: 10px;
+}
+
+.cardAlt {
+  color: #fff;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  left: 0;
+  min-height: 15em;
+  top: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.cardAlt:hover .imgSection {
+  transform: translateY(1em);
+}
+
+.cardDesc {
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+  top: -10px;
+  display: grid;
+  gap: 10px;
+  background: var(--primary-clr);
+}
+
+.cardTime {
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 1em;
+  text-align: center;
+}
+
+.imgSection {
+  transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: hsl(195, 74%, 62%);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.cardTitle {
+  flex: 1;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.cardMenu {
+  display: flex;
+  gap: 4px;
+  margin-inline: auto;
+}
+
+.cardAlt svg {
+  float: right;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cardAlt .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--dot-clr);
+}
+
+.cardAlt .recent {
+  font-size: 1em;
+  line-height: 0;
+  text-align: center;
+}
+
+.cardA {
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all .3s;
+}
+
+.cardB {
+  background-color: #1a1a1a;
+  border-radius: 18px;
+  transition: all .2s;
+}
+
+.cardB:hover {
+  transform: scale(0.99);
+  border-radius: 20px;
+}
+
+.cardA:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+/* Keyframes  */
+/*
+@keyframes heartbeat { 
+  0%   { transform: scale( .75 ); }
+  20%  { transform: scale( 1 ); }
+  40%  { transform: scale( .75 ); }
+  60%  { transform: scale( 1 ); }
+  80%  { transform: scale( .75 ); }
+  100% { transform: scale( .75 ); }
+}
+*/
